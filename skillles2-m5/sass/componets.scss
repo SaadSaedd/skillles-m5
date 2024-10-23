@@ -1,0 +1,17 @@
+@use "colors";
+@use "font";
+
+%h2handwriting{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: colors.$font-color;
+    font-size: 300%;
+}
+%texth2{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #921A40;
+    font-size: 400%;
+}

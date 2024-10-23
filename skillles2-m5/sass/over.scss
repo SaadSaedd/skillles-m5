@@ -1,0 +1,52 @@
+@use "colors";
+@use "componets";
+
+.over{
+    padding: -1rem;
+    height: 80rem;
+    border-bottom: 0.2rem solid  #eee;
+    
+}
+.over__header{
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.over__h2{
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+   @extend %texth2;
+}
+.over__colums{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+   flex-direction: row;
+}
+.over__column{
+    
+    gap: 2rem;
+}
+.over__p{
+    margin-top: 5rem;
+    width: 55ch;
+    color: #921A40;
+}
+
+
+.over__img{
+
+    padding: 3rem;
+    object-fit: cover;
+    position: relative;
+    width: 60rem;
+    height: 60rem;
+    
+}

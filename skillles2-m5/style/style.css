@@ -1,0 +1,25 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  background: #16233E;
+}
+
+a,
+a:visited,
+a:link {
+  color: #eee;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

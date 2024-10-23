@@ -1,0 +1,51 @@
+@use "colors";
+@use "font";
+@use "componets";
+
+.header{
+    height: 80vh;
+    position: relative;
+}
+.header__figure{
+    height: 100%;
+    width: 100%;
+    background-image: colors.$linear ;
+    background-position: bottom;
+    object-fit: contain;
+}
+.header > figure> div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: colors.$font-color;
+    text-align: center;
+}
+.header__1{
+    font-family: 'Schoolbell', arial, serif;
+    font-size: 400%;
+}
+.header__2{
+    @extend %h2handwriting;
+}
+.header__button{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: colors.$pink;
+    border: none;
+    color: colors.$font-color;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+.header__logo{
+    font-size: 150%;
+    color: black;
+    padding: 2rem;
+
+}

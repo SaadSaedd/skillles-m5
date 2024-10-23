@@ -1,0 +1,48 @@
+.kenmerken{
+    height: 90vh;
+    border-bottom: 0.2rem solid #eee;
+    padding: 4rem;
+   
+}
+.kenmerken__header{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.kenmerken__h2{
+   
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.kenmerken__list{
+    margin-top: -5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin-bottom: 5rem;
+}
+.kenmerken__listItem{
+    list-style: none;
+    color: #921A40;
+    width: 40%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kenmerken__p{
+    width: 40ch;
+    text-align: center;
+}

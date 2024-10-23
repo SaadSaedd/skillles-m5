@@ -1,0 +1,57 @@
+@use "colors";
+
+.nav{
+    display: flex;
+    width: 100%;
+    background: colors.$gray;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+    color: colors.$font-color;
+    font-size: 120%;
+    padding: 4rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+.nav__logo{
+    font-size: 150%;
+    color: black;
+    padding: 2rem;
+}
+.nav>svg {
+    height: 4rem;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 120%;
+    flex-direction: column;
+}
+
+.class_list{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.nav_button{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: colors.$pink;
+    border: none;
+    color: colors.$font-color;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+
+}
+.nav_button:hover{
+    cursor: pointer;
+    background: colors.$pink;
+    transition: 0.2s;
+}
