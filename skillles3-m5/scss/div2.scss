@@ -1,0 +1,304 @@
+div {
+    position: absolute;
+    inset: 0px;
+    background: radial-gradient(
+      #ff000033,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l1-x, 0px))
+      calc(50% - 50vmin + var(--l1-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #ff000033,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l3-x, 0px))
+      calc(50% - 50vmin + var(--l3-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #ff000033,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l4-x, 0px))
+      calc(50% - 50vmin + var(--l4-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #ff000033,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l5-x, 0px))
+      calc(50% - 50vmin + var(--l5-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #ff000033,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l6-x, 0px))
+      calc(50% - 50vmin + var(--l6-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #ff000033,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l7-x, 0px))
+      calc(50% - 50vmin + var(--l7-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #ff000088,
+      #0000 70%
+    ) 50% 50% /
+      calc((var(--l4567-scale) - 1) * 8 * 15vmin)
+      calc((var(--l4567-scale) - 1) * 8 * 15vmin) no-repeat,
+    radial-gradient(
+      #ff000088,
+      #0000 70%
+    ) calc(50% - 50vmin + 87.5vmin) 50% /
+      calc((var(--end-scale) - 1) * 8 * 15vmin)
+      calc((var(--end-scale) - 1) * 8 * 15vmin) no-repeat,
+    radial-gradient(
+      #ff000088,
+      #0000 70%
+    ) calc(50% - 50vmin + 12.5vmin) 50% /
+      calc((var(--end-scale) - 1) * 8 * 15vmin)
+      calc((var(--end-scale) - 1) * 8 * 15vmin) no-repeat,
+    radial-gradient(
+      circle at 50% 50%,
+      #351f21,
+      #211411,
+      #000000 80%
+    ) 50% 50% / 100vmin 100vmin no-repeat,
+    black;
+    animation: movelights 7s linear infinite;
+  }
+  
+  div::after,
+  div::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    --size: 9vmin;
+    --blur: -2px;
+    --mask: linear-gradient(
+      to bottom right,
+      #0000 calc(50% - (3px + var(--blur))),
+      #000 calc(50% - (3px - var(--blur))) calc(50% + (3px - var(--blur))),
+      #0000 calc(50% + (3px + var(--blur)))
+    ) 50% 50% / var(--size) calc(var(--size) * 2),
+    linear-gradient(
+      to bottom left,
+      #0000 calc(50% - (3px + var(--blur))),
+      #000 calc(50% - (3px - var(--blur))) calc(50% + (3px - var(--blur))),
+      #0000 calc(50% + (3px + var(--blur)))
+    ) 50% 50% / var(--size) calc(var(--size) * 2),
+    linear-gradient(
+      to bottom,
+      #0000 calc(50% - (3px + var(--blur))),
+      #000 calc(50% - (3px - var(--blur))) calc(50% + (3px - var(--blur))),
+      #0000 calc(50% + (3px + var(--blur)))
+    ) 50% 50% / var(--size) calc(var(--size) * 2),
+    linear-gradient(
+      to bottom,
+      #000 calc(3px - var(--blur)),
+      #0000 calc(3px + var(--blur)) calc(100% - (3px + var(--blur))),
+      #000 calc(100% - (3px - var(--blur)))
+    ) 50% 50% / var(--size) calc(var(--size) * 2);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    
+    background: radial-gradient(
+      #eca58b,
+      #7e2f19,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l1-x, 0px))
+      calc(50% - 50vmin + var(--l1-y, 0px)) /
+      calc(var(--big-opacity) * 15vmin) calc(var(--big-opacity) * 15vmin) no-repeat,
+    radial-gradient(
+      #7e2f19,
+      #ff000044,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l0-x, 0px))
+      calc(50% - 50vmin + var(--l0-y, 0px)) /
+      calc(var(--big-opacity) * 25vmin) calc(var(--big-opacity) * 25vmin) no-repeat,
+    radial-gradient(
+      #eca58b,
+      #7e2f19,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l3-x, 0px))
+      calc(50% - 50vmin + var(--l3-y, 0px)) /
+      calc(var(--big-opacity) * 15vmin) calc(var(--big-opacity) * 15vmin) no-repeat,
+    radial-gradient(
+      #7e2f19,
+      #ff000044,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l2-x, 0px))
+      calc(50% - 50vmin + var(--l2-y, 0px)) /
+      calc(var(--big-opacity) * 25vmin) calc(var(--big-opacity) * 25vmin) no-repeat,
+    radial-gradient(
+      #eca58b 10%,
+      #ff2f1966,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l4-x, 52vmin))
+      calc(50% - 50vmin + var(--l4-y, -5vmin)) /
+      calc(7vmin + 8vmin * (var(--l4567-scale) - 1)) 15vmin no-repeat,
+    radial-gradient(
+      #eca58b 10%,
+      #ff2f1966,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l5-x, 48vmin))
+      calc(50% - 50vmin + var(--l5-y, 105vmin)) /
+      calc(7vmin + 8vmin * (var(--l4567-scale) - 1)) 15vmin no-repeat,
+    radial-gradient(
+      #eca58b 10%,
+      #ff2f1966,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l6-x, 0px))
+      calc(50% - 50vmin + var(--l6-y, 0px)) / 15vmin 15vmin no-repeat,
+    radial-gradient(
+      #eca58b 10%,
+      #ff2f1966,
+      #0000 70%
+    ) calc(50% - 50vmin + var(--l7-x, 0px))
+      calc(50% - 50vmin + var(--l7-y, 0px)) / 15vmin 15vmin no-repeat,
+    black;
+  }
+  div::before {
+    --blur: 1px;
+    filter: brightness(2);
+  }
+  
+  @property --l0-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l0-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l1-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l1-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  
+  @property --l2-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l2-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l3-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l3-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  
+  @property --l4-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l4-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  
+  @property --l5-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l5-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  
+  @property --l6-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l6-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l7-x { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  @property --l7-y { syntax: "<length>"; initial-value: 0px; inherits: true; }
+  
+  @property --l4567-scale { syntax: "<number>"; initial-value: 1; inherits: true; }
+  @property --end-scale { syntax: "<number>"; initial-value: 0; inherits: true; }
+  @property --big-opacity { syntax: "<number>"; initial-value: 0; inherits: true; }
+  
+  @keyframes movelights {
+    0% {
+      --big-opacity: 1;
+      --l0-x: -10vmin;
+      --l0-y: -10vmin;
+      --l1-x: -5vmin;
+      --l1-y: 0vmin;
+      
+      --l2-x: 110vmin;
+      --l2-y: 110vmin;
+      --l3-x: 105vmin;
+      --l3-y: 100vmin;
+      
+      --l4567-scale: 1;
+      --l4-x: 52vmin;
+      --l4-y: -5vmin;
+      
+      --l5-x: 48vmin;
+      --l5-y: 105vmin;
+      
+      --l6-x: -95vmin;
+      --l6-y: 50vmin;
+      --l7-x: 195vmin;
+      --l7-y: 50vmin;
+      --l4567-scale: 1;
+    }
+    9% { --l4567-scale: 1; }
+    12.5% { --l4567-scale: 1.1; }
+    16% { --l4567-scale: 1; }
+    25% {
+      --l4-x: 52vmin;
+      --l4-y: 105vmin;
+      
+      --l5-x: 48vmin;
+      --l5-y: -5vmin;
+      --l4567-scale: 1;
+    }
+    36% {
+      --l4-x: 52vmin;
+      --l4-y: 50vmin;
+      
+      --l5-x: 48vmin;
+      --l5-y: 50vmin;
+      
+      --l6-x: 50vmin;
+      --l6-y: 50vmin;
+      --l7-x: 50vmin;
+      --l7-y: 50vmin;
+      --l4567-scale: 1;
+    }
+    40% { --l4567-scale: 1.5; }
+    45% { --l4567-scale: 2; }
+    50% {
+      --l0-x: 50vmin;
+      --l0-y: 98vmin;
+      --l1-x: 50vmin;
+      --l1-y: 100vmin;
+  
+      --l2-x: 50vmin;
+      --l2-y: 2vmin;
+      --l3-x: 50vmin;
+      --l3-y: 0vmin;
+      --l4567-scale: 1;
+      
+      --l4-x: 75vmin;
+      --l4-y: 0vmin;
+      --l5-x: 25vmin;
+      --l5-y: 100vmin;
+      
+      --l6-x: 75vmin;
+      --l6-y: 100vmin;
+      --l7-x: 25vmin;
+      --l7-y: 0vmin;
+    }
+    70% { --end-scale: 0; }
+    75% {
+      --l4-x: 87.5vmin;
+      --l4-y: 50vmin;
+      --l5-x: 12.5vmin;
+      --l5-y: 50vmin;
+      
+      --l6-x: 87.5vmin;
+      --l6-y: 50vmin;
+      --l7-x: 12.5vmin;
+      --l7-y: 50vmin;
+      --end-scale: 1.5;
+      --big-opacity: 1;
+    }
+    82.5% {
+      --l5-x: 40vmin;
+      --l5-y: 100vmin;
+      --l4-x: 60vmin;
+      --l4-y: 0vmin;
+      --end-scale: 0.75;
+    }
+    100% {
+      --l0-x: 95vmin;
+      --l0-y: 15vmin;
+      --l1-x: 100vmin;
+      --l1-y: 5vmin;
+  
+      --l2-x: 5vmin;
+      --l2-y: 85vmin;
+      --l3-x: 0vmin;
+      --l3-y: 95vmin;
+  
+      --l5-x: 50vmin;
+      --l5-y: 0vmin;
+      --l4-x: 50vmin;
+      --l4-y: 100vmin;
+  
+      --l6-x: 105vmin;
+      --l6-y: 100vmin;
+      --l7-x: -5vmin;
+      --l7-y: 0vmin;
+      --big-opacity: 0;
+    }
+  }
+
+  #div{
+    box-shadow: 12rem 14rem blue;
+    z-index: 9;
+  }

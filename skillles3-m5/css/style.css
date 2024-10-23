@@ -1,0 +1,37 @@
+:root {
+  --color-blue: blue;
+  --color-blue2: red;
+  --color-gray:gray;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+nav {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+}
+
+footer {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+}
+
+div {
+  background: green;
+  border-radius: 10%;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: -40px -100px 0 var(--color-blue2), -120px -180px 0 var(--color-blue2), -40px 130px 0 var(--color-blue2), -200px -180px 0 var(--color-blue2), -40px 210px 0 var(--color-blue2), -280px -100px 0 var(--color-blue2), -280px -20px 0 var(--color-blue2), -200px 60px 0 var(--color-blue2), -120px 60px 0 var(--color-blue2), -120px 290px 0 var(--color-blue2), -200px 290px 0 var(--color-blue2), -280px 210px 0 var(--color-blue2), 500px -100px 0 var(--color-blue), 420px -180px 0 var(--color-blue), 490px 140px 0 var(--color-blue), 340px -180px 0 var(--color-blue), 490px 220px 0 var(--color-blue), 260px -100px 0 var(--color-blue), 260px -20px 0 var(--color-blue), 330px 60px 0 var(--color-blue), 410px 60px 0 var(--color-blue), 410px 300px 0 var(--color-blue), 330px 300px 0 var(--color-blue), 250px 220px 0 var(--color-blue), -10px -340px 0 var(--color-gray), -90px -340px 0 var(--color-gray), -170px -340px 0 var(--color-gray), -250px -340px 0 var(--color-gray), -330px -340px 0 var(--color-gray), -410px -340px 0 var(--color-gray), -490px -340px 0 var(--color-gray), -570px -340px 0 var(--color-gray), -650px -340px 0 var(--color-gray), -730px -340px 0 var(--color-gray), 70px -340px 0 var(--color-gray), 150px -340px 0 var(--color-gray), 230px -340px 0 var(--color-gray), 310px -340px 0 var(--color-gray), 390px -340px 0 var(--color-gray), 470px -340px 0 var(--color-gray), 550px -340px 0 var(--color-gray), 630px -340px 0 var(--color-gray), 710px -340px 0 var(--color-gray), -10px 360px 0 var(--color-gray), -90px 360px 0 var(--color-gray), -170px 360px 0 var(--color-gray), -250px 360px 0 var(--color-gray), -330px 360px 0 var(--color-gray), -410px 360px 0 var(--color-gray), -490px 360px 0 var(--color-gray), -570px 360px 0 var(--color-gray), -650px 360px 0 var(--color-gray), -730px 360px 0 var(--color-gray), 70px 360px 0 var(--color-gray), 150px 360px 0 var(--color-gray), 230px 360px 0 var(--color-gray), 310px 360px 0 var(--color-gray), 390px 360px 0 var(--color-gray), 470px 360px 0 var(--color-gray), 550px 360px 0 var(--color-gray), 630px 360px 0 var(--color-gray), 710px 360px 0 var(--color-gray);
+}
+
+/*# sourceMappingURL=style.css.map */
