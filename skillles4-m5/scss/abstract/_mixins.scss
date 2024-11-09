@@ -1,0 +1,27 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rotate($dur: 0.6s){
+    transform: rotate(360deg);
+    transition: $dur all;
+    transition-timing-function: linear;
+}
+
+@mixin fontDoto{
+    font-weight: 400;
+    font-family: "Doto", sans-serif;
+}
+
+@mixin fontOswald{
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
+
+@mixin fontEdu{
+    font-weight: 400;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}

@@ -1,0 +1,11 @@
+@use "abstract/_colors";
+@use "abstract/_mixins";
+
+body{
+    background: colors.$gradient;
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+}

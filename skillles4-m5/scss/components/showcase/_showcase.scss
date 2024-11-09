@@ -1,0 +1,66 @@
+@use "../../abstract/_mixins";
+@use "../../abstract/_animations";
+@use "../../abstract/_colors";
+.showcase{
+    width: 80vw;
+    background: colors.$background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 4rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 150rem;
+    @include animations.popup;
+    &__input{
+        font-size: 100%;
+        padding: 2rem;
+        padding-left: 0;
+       width: 50%;
+       border: none;
+        background: none;
+        border-bottom: 0.2rem solid blue ;
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__font{
+        font-size: 180%;
+        font-weight: 500;
+    }
+
+    &__output{
+        font-size: 250%;
+
+
+        &--doto{
+            @include mixins.fontDoto;
+        }
+        &--edu{
+            @include mixins.fontEdu;
+        }
+        &--oswald{
+            @include mixins.fontOswald;
+        }
+    }
+
+}
+
+.fa-heart{
+    font-size: 80%;
+    color: red;
+}
+
+.fa-heart__clicked{
+    background: red;
+}
